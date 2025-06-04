@@ -11,3 +11,13 @@ cor4 = #24233F
 cor5 = #2E2D48 
 cor6 = #FFFFFF #letras
 
+# janela
+
+janela = Tk()
+janela.title("Jokenpô")
+janela.geometry("360x380+300+300")
+janela.configure(bg=cor1)
+janela.mainloop()
+
+
+
