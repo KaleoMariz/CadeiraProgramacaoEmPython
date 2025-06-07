@@ -55,3 +55,25 @@ def calcular(calc):
     return str(round(resultado, 6)) #converte para string para exibir como texto na tela
 
 calc = ""
+
+while True:
+    calculadora()
+    if calc == "":
+        print("Expressão vazia.")
+    else:
+        print("Expressão:",calc)
+
+    entrada = input("Navegador: \n C (limpar) \n S (sair)\n = (calcular)\n")
+    if entrada == '=':
+        resultado = calcular(calc)
+        print("  RESULTADO:\n  ", resultado)
+        calc = ""
+    elif entrada.lower() == 's':
+        print("Encerrando...")
+        break
+    elif entrada.lower() == 'c':
+        calc = ""
+        print ("Vazio")
+    else:
+        calc += entrada
+        print("Expressão:", calc)
