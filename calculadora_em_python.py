@@ -58,4 +58,39 @@ while type_character == 1:
       print ("Obrigado! Volte sempre!")
       type_character = int(input("Digite 1 se quiser utilizar a calculadora: \n"))
 
-  
+  elif opcao == 4:
+    print ("Divisão \n")
+    a = float(input("Digite o número a dividir: "))
+    b = float(input("Digite por quando você quer dividi-lo: \n"))
+    print ("O resultado da divisão é:", divisao_de_dois_numeros(a, b))
+    type_character = int(input("Digite 1 se quiser continuar a utilizar a calculadora: \n"))
+    if type_character != 1: 
+      print ("Obrigado! Volte sempre!")
+      type_character = int(input("Digite 1 se quiser utilizar a calculadora: \n"))
+
+  elif opcao == 5:
+    print ("Potenciação \n")
+    a = float(input("Digite a base da potência: "))
+    b = float(input("Digite o expoente da potência: \n"))
+    print ("O resultado da potência é: ", potencia_de_dois_numeros(a, b)) 
+    type_character = int(input("Digite 1 se quiser continuar a utilizar a calculadora: \n"))
+    if type_character != 1: 
+      print ("Obrigado! Volte sempre!")
+      type_character = int(input("Digite 1 se quiser utilizar a calculadora: \n"))
+
+  elif opcao == 6:
+    print ("Raiz quadrada, cúbica, ou qualqur grau \n")
+    a = float(input("Digite o 'radicando' da raiz: "))
+    b = float(input("Digite o índice da raíz: \n"))
+    print ("O resultado da raiz é: ", raiz_de_dois_numeros(a, b))
+    type_character = int(input("Digite 1 se quiser continuar a utilizar a calculadora: \n"))
+    if type_character != 1: 
+      print ("Obrigado! Volte sempre!")
+      type_character = int(input("Digite 1 se quiser utilizar a calculadora: \n"))
+
+  else:
+    print ("Não corresponde a nenhuma operação")
+    type_character = int(input("Digite 1 se quiser continuar a utilizar a calculadora: \n"))
+    if type_character != 1: 
+      print ("Obrigado! Volte sempre!")
+      type_character = int(input("Digite 1 se quiser utilizar a calculadora: \n"))
